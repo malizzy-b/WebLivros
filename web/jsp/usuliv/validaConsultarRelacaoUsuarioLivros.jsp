@@ -36,9 +36,7 @@
               <tr>
                   <th data-field="IdUsuSist">Id</th>
                   <th data-field="IdU">IdUsuario</th>
-                  <th data-field="Login">Login</th>
-                  <th data-field="IdS">IdSistema</th>
-                  <th data-field="NomeSistema">Sistema</th>
+                  <th data-field="Login">IdLivro</th>
                   <th data-field="Observacao">Observacao</th>
                   <th data-field="Excluir">Excluir</th>
                   <th data-field="Alterar">Alterar</th>
@@ -54,7 +52,6 @@
                         <tr>
                             <td><%=usuSistSaida.getId()%></td>
                             <td><%=usuSistSaida.getIdU()%></td>
-                            <td><%=usuSaida.getLogin()%></td>
                             <td><%=usuSistSaida.getIdL()%></td>
                             <td><%=usuSistSaida.getObs()%></td>
                             <% if (usuLogado.getTipo().equals("ADM")) { %>

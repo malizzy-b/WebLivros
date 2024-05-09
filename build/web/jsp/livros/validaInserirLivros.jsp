@@ -15,7 +15,7 @@
     controller.inserir(livro);
 
     // REDIRECIONA PARA A PÁGINA inserirLivro.jsp
-    String url = "inserirLivro.jsp";
+    String url = "inserirLivros.jsp";
     response.sendRedirect(url);
 %>
 

@@ -15,7 +15,7 @@
         String pbusca = request.getParameter("PBUSCA");
 
         // Criando um objeto UsuarioLivros com os dados fornecidos
-        UsuarioLivros usuarioLivros = new UsuarioLivros(id, idU, idL, dataEmprestimo, dataDevolucao, obs);
+        UsuarioLivros usuarioLivros = new UsuarioLivros(id, idU, idL, obs);
 
         // Criando uma instância do controlador
         ControllerUsuarioLivros controllerUsuarioLivros = new ControllerUsuarioLivros();
@@ -24,7 +24,7 @@
         controllerUsuarioLivros.alterar(usuarioLivros);
 
         // Redirecionando para a página de consulta de usuário-livro
-        String url = "validaConsultarUsuarioLivros.jsp?ID=" + pbusca;
+        String url = "validaConsultarRelacaoUsuarioLivros.jsp?ID=" + pbusca;
         response.sendRedirect(url);
     } catch (Exception e) {
         // Exibindo informações de erro
